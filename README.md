@@ -4,6 +4,7 @@ This is a simple Pong-inspired animation created using p5.js. The animation feat
 balls that bounce around the canvas, are a ected by gravity, and allow for dynamic 
 changes in their color and size. Multiple balls are present, and each ball has unique 
 speed and size characteristics.
+
 Features
 Gravity: Balls experience downward gravity, making them fall unless they bounce 
 o the edges.
