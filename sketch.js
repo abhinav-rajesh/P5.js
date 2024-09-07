@@ -1,19 +1,20 @@
 let balls = [];
-let gravity = 0.1;
+let gravity = 0.001;
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   // Create multiple balls
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 20; i++) {
     balls.push(new Ball(random(50, width - 50), random(50, height - 50), random(20, 50)));
   }
 }
 
 function draw() {
   background(0);
-  text('Press any key to change colour', 100, 200);
-  textSize(15);
+  text('Press any key to change colour', width/2, height/2);
+  textSize(25);
+  textAlign(CENTER,CENTER);
 
   // Update and display all balls
   for (let ball of balls) {
